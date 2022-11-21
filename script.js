@@ -148,5 +148,6 @@ document.addEventListener('keydown', function keyHandler(event){
   if (pattern.length === current) {
 		current = 0;
 		window.alert('Congratulations! You Found an Easter Egg!');
+    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 	}
 }, false);
