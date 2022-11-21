@@ -66,7 +66,7 @@ let btnView = document.querySelectorAll(".btn-success");
 let cardText = document.querySelectorAll(".card-text");
 let cardImg = document.querySelectorAll(".card-img-top");
 
-for (let index = 0; index <= btnView.length - 1; index++) {
+btnView.forEach ((element, index) => {
   let cardView = false;
   btnView[index].addEventListener("mouseover", function reduceCard(){ 
     if (cardView == false) {
@@ -79,7 +79,7 @@ for (let index = 0; index <= btnView.length - 1; index++) {
       cardView = false;
     }
   });
-} 
+}) 
 
 // Fonctionnalité 7️⃣
 
