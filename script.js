@@ -68,15 +68,14 @@ let cardImg = document.querySelectorAll(".card-img-top");
 
 for (let index = 0; index <= btnView.length - 1; index++) {
   let cardView = false;
-  let textInCard = cardText[index].innerHTML
   btnView[index].addEventListener("mouseover", function reduceCard(){ 
     if (cardView == false) {
       cardImg[index].style.width = "20%";
-      cardText[index].innerHTML = "";
+      cardText[index].style.display = "none";
       cardView = true;
     } else {
       cardImg[index].style.width = "100%";
-      cardText[index].innerHTML = textInCard;
+      cardText[index].style.display = "block";
       cardView = false;
     }
   });
